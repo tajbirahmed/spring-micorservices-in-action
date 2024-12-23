@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "Config Server"
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/tajbirahmed/spring-micriservice-config-repo/
+          searchPaths: licensingservice,organizationservice
+          username: tajbirahmed
+server:
+  port: 8888
+
